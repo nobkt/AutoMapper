@@ -707,6 +707,8 @@ AutoMapper.py . map pre.data post.data \
     --debug
 ```
 
+**Performance Note:** Debug mode generates extensive output, especially for large molecules (>1000 atoms). This may impact performance and create very large log files. Use debug mode primarily for troubleshooting and algorithm verification.
+
 **Debug Output Includes:**
 - Detailed mapping steps
 - Fingerprint matching attempts

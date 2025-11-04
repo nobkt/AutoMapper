@@ -82,9 +82,9 @@ Documentation indexes in English and Japanese.
 
 ## Statistics / 統計
 
-- **Total lines:** 5,171
-- **Total characters:** ~133,600
-- **Files created:** 6
+- **Total lines:** 5,311
+- **Total characters:** ~135,000
+- **Files created:** 7
 - **Mathematical formulas:** 50+
 - **Code examples:** 100+
 - **Algorithms documented:** 15+

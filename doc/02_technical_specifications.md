@@ -1164,6 +1164,11 @@ AutoMapper.py . map pre.data post.data \
 **Issue 1: Deprecation Warning**
 - LAMMPS versions 29Sept21+ prefer "Initiator IDs" over "Bonding IDs"
 - Current implementation uses "BondingIDs"
+- **Compatibility:** Works with all LAMMPS versions but may show deprecation warning
+- **Migration Path:** For newest LAMMPS (29Sept21+), manually edit map file:
+  - Find: "BondingIDs"
+  - Replace with: "Initiator IDs"
+- **Production Recommendation:** Test with your specific LAMMPS version before production use
 - Workaround: Manually edit map file if needed
 
 **Issue 2: Wildcards in Coefficients**
