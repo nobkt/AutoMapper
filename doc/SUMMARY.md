@@ -24,7 +24,7 @@ Content includes:
 
 **Mathematical rigor:** All algorithms expressed with complete mathematical formulas, NO omissions.
 
-### 2. 02_technical_specifications.md (1,211 lines)
+### 2. 02_technical_specifications.md (1,216 lines)
 **詳細技術仕様書**
 
 Content includes:
@@ -57,7 +57,7 @@ Content includes:
 
 **Design depth:** Complete design documentation from architecture to implementation.
 
-### 4. 04_user_manual.md (1,752 lines)
+### 4. 04_user_manual.md (1,756 lines)
 **完全なユーザーマニュアル**
 
 Content includes:
@@ -82,8 +82,8 @@ Documentation indexes in English and Japanese.
 
 ## Statistics / 統計
 
-- **Total lines:** 5,311
-- **Total characters:** ~135,000
+- **Total lines:** 5,318
+- **Total characters:** ~136,000
 - **Files created:** 7
 - **Mathematical formulas:** 50+
 - **Code examples:** 100+
