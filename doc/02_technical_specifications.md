@@ -1162,14 +1162,14 @@ AutoMapper.py . map pre.data post.data \
 ### 10.1 Known Issues
 
 **Issue 1: Deprecation Warning**
-- LAMMPS versions 29Sept21+ prefer "Initiator IDs" over "Bonding IDs"
-- Current implementation uses "BondingIDs"
-- **Compatibility:** Works with all LAMMPS versions but may show deprecation warning
-- **Migration Path:** For newest LAMMPS (29Sept21+), manually edit map file:
-  - Find: "BondingIDs"
-  - Replace with: "Initiator IDs"
+- LAMMPS versions 29Sept21+ prefer "Initiator IDs" (with space) over "BondingIDs" (no space)
+- Current implementation outputs section header as: `BondingIDs` (no space)
+- **Compatibility:** Works with all LAMMPS versions but may show deprecation warning in 29Sept21+
+- **Migration Path:** For newest LAMMPS (29Sept21+), manually edit the map file:
+  - Find the exact text: `BondingIDs` (no space)
+  - Replace with: `Initiator IDs` (with space - note the space between words)
 - **Production Recommendation:** Test with your specific LAMMPS version before production use
-- Workaround: Manually edit map file if needed
+- Workaround: Manually edit map file if deprecation warning appears
 
 **Issue 2: Wildcards in Coefficients**
 - Clean tool requires numeric pair coefficients
