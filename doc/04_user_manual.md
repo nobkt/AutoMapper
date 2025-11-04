@@ -73,6 +73,8 @@ AutoMapper is designed for:
 
 Check if Python 3.6+ is installed:
 ```bash
+python --version
+# or on some systems:
 python3 --version
 ```
 

@@ -133,6 +133,6 @@ For different audiences:
 
 ---
 
-Created: 2025-11-04
+Created: November 2025
 Version: 1.0
 Status: Complete / 完了
