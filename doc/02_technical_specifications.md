@@ -160,9 +160,9 @@ B bond types
 A angle types
 D dihedral types
 
-xlo xhi xlo
-ylo yhi ylo
-zlo zhi zlo
+xlo xhi
+ylo yhi
+zlo zhi
 
 Masses
 
@@ -376,7 +376,7 @@ Constraint: If type T1 in file1 and T2 in file2 have same element:
 
 ### 3.2 Molecule Tool Algorithm
 
-**Function:** `lammps_to_molecule(directory, dataFile, saveName, bondingAtoms, deleteAtoms, validIDSet, renumberedAtomDict)`
+**Function:** `lammps_to_molecule(directory, fileName, saveName, bondingAtoms, deleteAtoms, validIDSet, renumberedAtomDict)`
 
 **Algorithm:**
 ```
@@ -726,7 +726,7 @@ def file_unifier(directory: str, coeffFile: str, dataFiles: list[str]) -> None:
 ```python
 def lammps_to_molecule(
     directory: str,
-    dataFile: str,
+    fileName: str,
     saveName: str,
     bondingAtoms: list[str] = None,
     deleteAtoms: list[str] = None,
@@ -738,7 +738,7 @@ def lammps_to_molecule(
     
     Args:
         directory: Working directory path
-        dataFile: Input LAMMPS data file name
+        fileName: Input LAMMPS data file name
         saveName: Output molecule file name
         bondingAtoms: List of bonding atom IDs (optional)
         deleteAtoms: List of atoms to mark for deletion (optional)
@@ -749,7 +749,7 @@ def lammps_to_molecule(
         - Creates '<saveName>' molecule file in directory
     
     Raises:
-        FileNotFoundError: If dataFile doesn't exist
+        FileNotFoundError: If fileName doesn't exist
         ValueError: If file format is invalid
     """
 ```
